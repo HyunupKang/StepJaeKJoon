@@ -12,3 +12,6 @@ for _ in range(t):
         if count % 2 == 0 :  # count가 2의 배수일 때, 
             move += 1  
     print(count)
+
+
+    # https://data-jj.tistory.com/36 여기 사이트 참조
