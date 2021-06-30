@@ -1,18 +1,19 @@
 #!/bin/bash
 
-array1=(0 0 0 0 0)
-array2=(0 0 0 0 0)
-array3=(0 0 0 0 0)
-array4=(0 0 0 0 0)
-array5=(0 0 0 0 0)
-
-array=(array1 array2 array3 array4 array5)
-
+#n=10
 row=0
 col=-1
 n=5
 value=1
 sing=1
+
+array_list="array"
+
+for i in `seq 1 ${n}`
+do
+    eval ${array_list}${i}=${i}
+    array+=("array$i")
+done
 
 while [ ${n} -gt 0 ]
 do
@@ -43,7 +44,7 @@ do
 	Line=(${!Line})
 	for((j=0; j<${#Line[*]}; ++j))
 	do
-		printf "${Line[j]} "
+		printf "%7s" "${Line[j]} "
 	done
 	echo
 done
