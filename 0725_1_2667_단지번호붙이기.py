@@ -19,6 +19,7 @@ def bfs(x, y):
     queue = deque()
     queue.append((x, y))
     cnt = 1
+    visited[x][y] == True
     # 큐가 빌 때 까지 반복
     while queue:
         x, y = queue.popleft()
