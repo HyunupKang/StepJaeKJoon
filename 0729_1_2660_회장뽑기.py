@@ -1,4 +1,9 @@
 #0729_1_2660_회장뽑기
+'''
+1. 그래프 연결 요소를 행렬로 만들기
+2. 1~N번까지 각각 탐색
+3. 탐색 횟수가 작은 index가 후보
+'''
 from collections import deque
 
 N = int(input())
